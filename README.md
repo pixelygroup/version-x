@@ -4,7 +4,7 @@ This small utility helps to change version in your project
 ## How to use in your project
 1. In your terminal run command:
 ```
-npm install -g @pixelygroup/version-x
+npm install @pixelygroup/version-x --save-dev
 ```
 2. Add into scripts section in package.json
 ```

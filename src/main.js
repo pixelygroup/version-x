@@ -2,15 +2,15 @@ const options = require('./lib/arg-options.js')
 const fileWriter = require('./lib/file-writer.js')
 const git = require('./lib/git.js')
 const version = require('./lib/version.js')
-const { bump, major, minor, patch, tag } = options
+const { exact, major, minor, patch, tag } = options
 
 let newVersion
-if (bump) {
-  if (!version.isValid(bump)) {
+if (exact) {
+  if (!version.isValid(exact)) {
     console.log('Error: Incorrect version format!')
     return
   }
-  newVersion = bump
+  newVersion = exact
 } else if (major) {
   newVersion = version.getMajor()
 } else if (minor) {

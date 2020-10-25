@@ -10,7 +10,10 @@ npm install @pixelygroup/version-x --save-dev
 ```
  "scripts": {
     ...
-    "bump-version": "version-x --"
+    "version-x": "version-x",
+    "version-major": "version-x -- -m",
+    "version-minor": "version-x -- -i",
+    "version-patch": "version-x -- -p",
     ...
   },
 ```
@@ -25,7 +28,7 @@ in the same order (left > right)
 Options:
       --help     Show help                                             [boolean]
       --version  Show version number                                   [boolean]
-  -b, --bump     requires version in format 1.1.1 or 1.1.1-beta, etc.   [string]
+  -x, --exact    requires version in format 1.1.1 or 1.1.1-beta, etc.   [string]
   -m, --major    Bumps a version on X position X.1.1                   [boolean]
   -i, --minor    Bumps a version on X position 1.X.1                   [boolean]
   -p, --patch    Bumps a version on X position 1.1.X                   [boolean]

@@ -1,12 +1,12 @@
 const yargs = require('yargs')
 
 const options = yargs
-  .usage(`Usage: -b 1.1.1 <version> / -m <major> / -i <minor> / -p <patch>.
+  .usage(`Usage: -x 1.1.1 <exact> / -m <major> / -i <minor> / -p <patch>.
     \nIn case of passing multiple options,
     \nthe conditions will be checked and applied
     \nin the same order (left > right)`)
-  .option('b', {
-    alias: 'bump',
+  .option('x', {
+    alias: 'exact',
     describe: 'requires version in format 1.1.1 or 1.1.1-beta, etc.',
     type: 'string',
   })

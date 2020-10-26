@@ -11,11 +11,19 @@ npm install @pixelygroup/version-x --save-dev
  "scripts": {
     ...
     "version-x": "version-x",
-    "version-major": "version-x -- -m",
-    "version-minor": "version-x -- -i",
-    "version-patch": "version-x -- -p",
+    "version-major": "version-x -m",
+    "version-minor": "version-x -i",
+    "version-patch": "version-x -p",
     ...
   },
+```
+3. This will allow you to run them as:
+```shell
+npm run version-x -- -x 1.1.1-exact-version
+```
+OR
+```
+npm run version-patch
 ```
 
 ## Usage

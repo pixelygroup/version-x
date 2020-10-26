@@ -55,3 +55,5 @@ npm install -g @pixelygroup/version-x
 ```
 npm uninstall -g @pixelygroup/version-x
 ```
+## Do you enjoy this package? Help us keep it maintained?
+### [Buy us a coffee or become a sponsor](https://github.com/sponsors/pixelygroup)

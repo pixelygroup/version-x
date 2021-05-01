@@ -1,6 +1,6 @@
 {
   "name": "@pixelygroup/version-x",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Bumps version in package.json and package-lock.json files based on passed argument",
   "repository": "github:pixelygroup/version-x.git",
   "bugs": {
@@ -11,10 +11,10 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "version-x": "node ./bin/index",
-    "version-major": "version-x -m",
-    "version-minor": "version-x -i",
-    "version-patch": "version-x -p"
+    "version-x": "node ./bin/index.js",
+    "version-major": "node ./bin/index.js -m",
+    "version-minor": "node ./bin/index.js -i",
+    "version-patch": "node ./bin/index.js -p"
   },
   "keywords": [
     "version",

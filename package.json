@@ -1,6 +1,6 @@
 {
   "name": "@pixelygroup/version-x",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "Bumps version in package.json and package-lock.json files based on passed argument",
   "repository": "github:pixelygroup/version-x.git",
   "bugs": {
